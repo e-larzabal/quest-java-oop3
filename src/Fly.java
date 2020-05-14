@@ -1,15 +1,17 @@
 public interface Fly {
 
-    void takeOff();
+    // signatures des méthodes
 
-    void ascend(int altitude);
+    public void takeOff();
 
-    void glide();
+    public void ascend(int altitude);
 
-    void descend(int altitude);
+    public void glide();
 
-    void land();
+    public void descend(int altitude);
 
-    void cantLand();
+    public void land();
+
+    public void cantLand();
 
 }
