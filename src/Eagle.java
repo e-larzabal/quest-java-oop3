@@ -30,9 +30,10 @@ public class Eagle extends Bird implements Fly {
     }
 
     @Override
-    public void ascend(int altitude) {
-        this.setAltitude(altitude);
-        System.out.println(this.getName()+" flies upward, altitude : "+this.getAltitude());
+    public void ascend(int meters) {
+        // Update altitude : ascend => +meters
+        this.setAltitude(this.getAltitude() + meters);
+        System.out.println(this.getName()+" flies upward, altitude : " + this.getAltitude());
     }
 
     @Override
@@ -41,14 +42,15 @@ public class Eagle extends Bird implements Fly {
     }
 
     @Override
-    public void descend(int altitude) {
-        this.setAltitude(altitude);
-        System.out.println(this.getName()+" flies downward, altitude : "+this.getAltitude());
+    public void descend(int meters) {
+        // Update altitude : descend => -meters
+        this.setAltitude(this.getAltitude() - meters);
+        System.out.println(this.getName()+" flies downward, altitude : " + this.getAltitude());
     }
 
     @Override
     public void land(){
-        System.out.println(this.getName()+" lands on the ground.");
+        System.out.println(this.getName() + " lands on the ground.");
     }
 
     @Override
