@@ -12,6 +12,4 @@ public interface Fly {
 
     public void land();
 
-    public void cantLand();
-
 }

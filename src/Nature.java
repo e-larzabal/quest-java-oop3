@@ -28,12 +28,12 @@ public class Nature {
 
         System.out.println("");
         EyeCherry.takeOff();            // Eye Cherry takes off in the sky.
-        EyeCherry.ascend(120);  // Eye Cherry flies upward, altitude : 120
-        EyeCherry.ascend(150);  // Eye Cherry flies upward, altitude : 150
+        EyeCherry.ascend(120);  // Eye Cherry flies upward, altitude : +120
+        EyeCherry.ascend(30);   // Eye Cherry flies upward, altitude : 120-30=150
         EyeCherry.glide();              // It glides into the air.
-        EyeCherry.descend(10);  // Eye Cherry flies downward, altitude : 10
-        EyeCherry.cantLand();           // Eye Cherry is too high, it can't lands.
-        EyeCherry.descend(1);   // Eye Cherry flies downward, altitude : 1
+        EyeCherry.descend(140);  // Eye Cherry flies downward, altitude : 150-140=10
+        EyeCherry.land();               // Eye Cherry is too high, it can't lands.
+        EyeCherry.descend(9);   // Eye Cherry flies downward, altitude : 10-9=1
         EyeCherry.land();               // Eye Cherry lands on the ground.
 
     }
